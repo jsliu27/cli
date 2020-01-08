@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "bin": {
-    "vuepress-cli": "index.js"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +13,8 @@
     "commander": "^4.1.0",
     "shelljs": "^0.8.3",
     "yargs": "^15.1.0"
+  },
+  "bin": {
+    "vuepress-cli": "index.js"
   }
 }
