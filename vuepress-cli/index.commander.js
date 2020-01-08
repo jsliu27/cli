@@ -35,12 +35,12 @@ program.parse(process.argv);
 // │   │   │   └── ssr.html
 // │   │   ├── config.js (可选的)
 // │   │   └── enhanceApp.js (可选的)
-// │   │ 
+// │   │
 // │   ├── README.md
 // │   ├── guide
 // │   │   └── README.md
 // │   └── config.md
-// │ 
+// │
 // └── package.json
 // 获取文件名
 const rootName = process.argv[3];
@@ -70,4 +70,3 @@ mkdir('styles')
 cd('styles')
 touch('index.styl')
 touch('palette.styl')
-

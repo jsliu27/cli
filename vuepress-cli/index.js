@@ -10,6 +10,7 @@ var argv = require('yargs')
     describe: 'your name',
     type: 'string'
   })
+
   .usage('Usage: hello [options]')
   .example('hello -n tom', 'say hello to Tom')
   .help('h')

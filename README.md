@@ -413,6 +413,7 @@ var argv = require('yargs')
 ```
 $ vuepress-cli morning -m "Are you hungry?"
 Good Morning
+
 Are you hungry?
 ```
 
