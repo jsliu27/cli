@@ -417,6 +417,17 @@ Good Morning
 Are you hungry?
 ```
 
+## 发布npm包
+
+1. 创建npm账号（如果已有，略过该步骤）
+[注册地址](https://www.npmjs.com/signup)
+2. 登陆 `npm login`
+3. 发布 `npm publish`
+
+每次发布时都需要更改package.json 中的version；<br />
+发布需将npm registry地址设为 [http://registry.npmjs.org](http://registry.npmjs.org)
+`npm config set registry http://registry.npmjs.org`
+
 ## Q&A
 
 > Q:我是mac系统的我想看看我的命令的脚本文件在哪？
