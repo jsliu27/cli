@@ -63,8 +63,6 @@ $ hello create my_vuepress
 hello  create
 ```
 
-![process.argv获取参数图](./img/01.png)
-
 ## 多线程
 
 为了充分利用`cpu`资源，或者仅仅是为了使用node创建另一个进程（子进程会复制父进程的内存空间，所以父进程加载过的模块子进程就不需要自己重新加载），我们可以使用node的`child_process`模块。<br />
