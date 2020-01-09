@@ -1,5 +1,5 @@
 {
-  "name": "vuepress-cli",
+  "name": "hello",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,6 +15,6 @@
     "yargs": "^15.1.0"
   },
   "bin": {
-    "vuepress-cli": "index.js"
+    "hello": "index.js"
   }
 }

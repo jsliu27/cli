@@ -12,7 +12,7 @@ program
   // rootName = name
   console.log(name)
   if (typeof name === 'undefined') {
-    console.error('没有该命令，你可以查看 vuepress-cli -h');
+    console.error('没有该命令，你可以查看 hello -h');
     process.exit(1);
   }
  })

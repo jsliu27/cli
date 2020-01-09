@@ -27,7 +27,7 @@
       "description": "",
       "main": "index.js",
       "bin": {
-          "vuepress-cli": "index.js"
+          "hello": "index.js"
       },
       "scripts": {
           "test": "echo \"Error: no test specified\" && exit 1"
@@ -55,9 +55,9 @@
 结果如下
 
 ```
-$ vuepress-cli create my_vuepress
+$ hello create my_vuepress
 [ '/usr/local/bin/node',
-  '/usr/local/bin/vuepress-cli',
+  '/usr/local/bin/hello',
   'create',
   'my_vuepress' ]
 hello  create
@@ -85,7 +85,7 @@ var child = exec('echo hello ' + name, function(err, stdout, stderr) {
 结果如下
 
 ```
-$ vuepress-cli tom
+$ hello tom
 hello tom
 ```
 
@@ -104,7 +104,7 @@ shell.exec("echo hello " + name);
 结果如下
 
 ```
-$ vuepress-cli tom
+$ hello tom
 hello tom
 ```
 
@@ -158,18 +158,18 @@ console.log('hello', argv.name)
 结果如下
 
 ```npm
-$ vuepress-cli --name=tom
+$ hello --name=tom
 hello tom
-$ vuepress-cli --name tom
+$ hello --name tom
 hello tom
 ```
 
 `process.argv`获取原始值是这样的
 
 ```npm
-$ vuepress-cli --name=tom
+$ hello --name=tom
 [ '/usr/local/bin/node',
-  '/usr/local/bin/vuepress-cli',
+  '/usr/local/bin/hello',
   '--name=tom']
 ```
 
@@ -178,7 +178,7 @@ $ vuepress-cli --name=tom
 ```javascript
 var argv = require('yargs').argv;
 
-// $ vuepress-cli --name=tom
+// $ hello --name=tom
 // argv = {
 //   name: tom
 // };
@@ -198,13 +198,13 @@ console.log('hello', argv)
 结果如下
 
 ```javascript
-  $ vuepress-cli --name=top --a=18
+  $ hello --name=top --a=18
   hello { _: [],
   name: 'top',
   n: 'top',
   a: 18,
   age: 18,
-  '$0': 'vuepress-cli' }
+  '$0': 'hello' }
 ```
 
 argv 对象有一个下划线(_) 属性，可以获取非连词线(-)开头的参数
@@ -219,7 +219,7 @@ argv 对象有一个下划线(_) 属性，可以获取非连词线(-)开头的�
 结果如下
 
 ```javascript
-  $ vuepress-cli A -n a B C
+  $ hello A -n a B C
   hello a
   [ 'A', 'B', 'C' ]
 ```
@@ -276,11 +276,11 @@ console.log('hello ', argv.n);
 上面代码中，参数 n 总是返回一个布尔值，用法如下。
 
 ```npm
-$ vuepress-cli
+$ hello
 hello  false
-$ vuepress-cli -n
+$ hello -n
 hello  true
-$ vuepress-cli -n tom
+$ hello -n tom
 hello  true
 ```
 
@@ -329,7 +329,7 @@ console.log('hello ', argv.n);
 执行结果如下
 
 ```npm
-$ vuepress-cli -h
+$ hello -h
 
 Usage: hello [options]
 
@@ -364,7 +364,7 @@ console.log('hello ', argv.n);
 用法如下。
 
 ```javascript
-$ vuepress-cli morning -n tom
+$ hello morning -n tom
 Good Morning
 hello tom
 ```
@@ -411,7 +411,7 @@ var argv = require('yargs')
 用法如下。
 
 ```
-$ vuepress-cli morning -m "Are you hungry?"
+$ hello morning -m "Are you hungry?"
 Good Morning
 
 Are you hungry?
