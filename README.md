@@ -426,11 +426,23 @@ Are you hungry?
 发布需将npm registry地址设为 [http://registry.npmjs.org](http://registry.npmjs.org)
 `npm config set registry http://registry.npmjs.org`
 
+## 自己遗忘的命令
+
+> 这里只是记录一些我自己用到的遗忘的命令，随着工作中使用，后续慢慢增加
+
+[记不住的命令](./command)
+
+## 脚手架学习
+
+> 看别人的脚手架一条命令直接生成一个项目，NB坏了，所以就想自己也做一个
+
+[脚手架学习](./stag)
+
 ## Q&A
 
 > Q:我是mac系统的我想看看我的命令的脚本文件在哪？
 
-> A:打开文件夹 使用组合快捷键 `Shift + Command + G` 然后输入 `/usr/local/bin/` 回车之后就可以在面找到你脚本名字对应的文件了
+> A:打开文件夹 使用组合快捷键 <kbd>Shift</kbd> + <kbd>Command</kbd> + <kbd>G</kbd> 然后输入 `/usr/local/bin/` 回车之后就可以在面找到你脚本名字对应的文件了
 
 # 感谢
 
